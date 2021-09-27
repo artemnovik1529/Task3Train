@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class CreatorThread extends Thread {
 
-    /*private static final Logger logger = LogManager.getLogger(String.valueOf(CreatorThread.class));*/
+   /* private static final Logger logger = LogManager.getLogger(String.valueOf(CreatorThread.class));*/
     private final Lock lock = new ReentrantLock();
     private final WaitingPool pool;
 
@@ -27,7 +27,7 @@ public class CreatorThread extends Thread {
             try {
                 Thread.sleep(new Random().nextInt(12_000));
             } catch (InterruptedException e) {
-                /*logger.info(e)*/;
+                /*logger.info(e);*/
 
             }
 
